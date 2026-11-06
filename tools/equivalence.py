@@ -2,8 +2,8 @@
 
   python -I tools/equivalence.py ADDON_IO.npz [--saved WEIGHTS.npz] [--sensitivity] [--json OUT.json]
 
-ADDON_IO.npz: what the add-on received and returned, per part, recorded by the caller (in our pipeline:
-parts_weights.py --dump-inputs): sv, st, sn (source positions, triangles, Blender vertex normals), src_w (source
+ADDON_IO.npz: what the add-on received and returned, per part, recorded once by the caller (a fixed recording;
+the recorder was retired with the add-on path): sv, st, sn (source positions, triangles, Blender vertex normals), src_w (source
 vertex-group weights, vertices x bones), parts (names), and per part tv_<p>, tt_<p>, tn_<p> (destination positions,
 triangles, the normals the add-on read) and w_tool_<p> (the add-on's vertex-group weights, float32).
 Settings: 0.05 m, 30 degrees, flipped normals allowed, Point mode, 4 groups, no smoothing (the add-on defaults).
