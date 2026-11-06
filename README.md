@@ -84,8 +84,11 @@ recorded file (format: `tools/equivalence.py`; `WEIGHTXFER_SAVED` adds the pipel
    children. `restrict_bones(W, allowed, fallback)` keeps only those bones, renormalises, and gives a row with no
    weight left to `fallback`.
 
-The results are deterministic: the same inputs give the same bytes. All steps are single-threaded numpy/scipy
-code with fixed orders, and the tests check this in the same process and in a new one.
+The results are deterministic: the same inputs and the same versions of numpy, scipy and robust-laplacian give
+the same bytes. All steps are single-threaded numpy/scipy code with fixed orders, and the tests check this in
+the same process and in a new one. The equivalence numbers below were measured with Python 3.13, numpy 2.5.4,
+scipy 1.18.1 and robust-laplacian 1.0.0. The test suite also passes from a fresh clone with Python 3.15 and
+robust-laplacian 1.1.0.
 
 ### Robustness
 
