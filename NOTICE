@@ -1,0 +1,33 @@
+weightxfer
+Copyright (c) 2026 memgrafter. MIT License (LICENSE).
+
+The matching, inpainting and smoothing steps (weightxfer/transfer.py, weightxfer/inpaint.py) are ported from the
+reference code of "Robust Skin Weights Transfer via Weight Inpainting" (Abdrashitov, Raichstat, Monsen, Hill,
+SIGGRAPH Asia 2023 Technical Communications, https://doi.org/10.1145/3610543.3626180):
+https://github.com/rin-23/RobustSkinWeightsTransferCode, commit a60263c17f38625b98a62bea09c91f61f7b865f0
+(src/utils.py, cpp_src/main.cpp). Its licence:
+
+MIT License
+
+Copyright (c) 2024 Rinat Abdrashitov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Dependencies (not included in this repository): numpy (BSD-3-Clause), scipy (BSD-3-Clause), robust-laplacian
+(MIT, Copyright (c) 2020 Nicholas Sharp). weightxfer does not use libigl and contains no GPL code.
